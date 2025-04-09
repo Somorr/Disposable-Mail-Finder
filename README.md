@@ -41,8 +41,8 @@ DisposableMail Finder is a secure web application that helps you verify whether 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/disposablemail-finder.git
-   cd disposablemail-finder
+   git clone https://github.com/Somorr/Disposable-Mail-Finder.git
+   cd Disposable-Mail-Finder
    ```
 2. install:
    ``` bash 
