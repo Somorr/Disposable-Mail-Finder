@@ -16,7 +16,7 @@
 DisposableMail Finder is a secure web application that helps you verify whether an email address comes from a disposable provider, a privacy-focused service, or a common free email domain. It provides detailed information including DNS records to help you make informed decisions about email legitimacy.
 
 <div align="center">
-  <img src="docs/demo.gif" alt="DisposableMail Finder Interface" width="600">
+  <img src="./Docs/demo.gif" alt="DisposableMail Finder Interface" width="600">
 </div>
 
 ## ✨ Key Features
