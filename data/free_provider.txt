@@ -1,0 +1,27 @@
+# Common free email providers
+gmail
+googlemail
+hotmail
+outlook
+live
+yahoo
+protonmail
+aol
+icloud
+mail
+gmx
+yandex
+zoho
+tutanota
+inbox
+fastmail
+hushmail
+rackspace
+lycos
+aim
+tuta
+cock
+mailbox
+shortmail
+pm
+mail.com

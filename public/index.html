@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DisposableMail Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Check if an email is from a disposable provider, privacy-focused, or free email service">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>DisposableMail Finder</h1>
+    <p>Check if an email address is from a disposable provider, privacy-focused, or free email service</p>
+
+    <!-- File warning banner will be added here dynamically if needed -->
+    <div id="file-warnings"></div>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form id="email-form" aria-label="Email verification form">
+        <div class="input-group">
+          <label for="email-input" class="visually-hidden">Email address</label>
+          <input
+                  type="email"
+                  id="email-input"
+                  placeholder="Enter email address..."
+                  required
+                  aria-required="true"
+                  aria-describedby="email-instructions"
+          >
+          <p id="email-instructions" class="visually-hidden">Enter an email address to check if it's from a disposable provider</p>
+          <button
+                  id="submit-btn"
+                  type="submit"
+                  aria-label="Check email"
+          >
+            Check
+          </button>
+        </div>
+      </form>
+
+      <div id="result" class="result hidden" aria-live="polite" role="status">
+        <h2 id="result-title">Result</h2>
+        <p id="result-message"></p>
+        <div id="result-details" class="result-details"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p><small>DisposableMail Finder helps identify temporary and privacy-focused email providers.</small></p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
