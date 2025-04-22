@@ -16,17 +16,18 @@
 DisposableMail Finder is a secure web application that helps you verify whether an email address comes from a disposable provider, a privacy-focused service, or a common free email domain. It provides detailed information including DNS records to help you make informed decisions about email legitimacy.
 
 <div align="center">
-  <img src="docs/screenshot.png" alt="DisposableMail Finder Interface" width="600">
+  <img src="docs/demo.gif" alt="DisposableMail Finder Interface" width="600">
 </div>
 
 ## ✨ Key Features
 
-- **Comprehensive Email Checking**: Identifies disposable, privacy-focused, and free email providers
+- **Comprehensive Email Checking**: Identifies disposable email, privacy-focused email, free email providers and university email around the world
 - **DNS Verification**: Checks MX records and DMARC policies for domains
-- **External API Integration**: Falls back to third-party verification for unknown domains
+- **External API Integration**: Falls back to third-party verification if the domain isn't found in the disposable list but has a pattern similar to disposable domains
 - **Self-Learning**: Automatically adds newly discovered disposable domains
 - **Robust Security**: Implements multiple layers of protection against common web vulnerabilities
 - **Mobile-Friendly UI**: Responsive design works on all devices
+- **User-Friendly Interface**: Simple and intuitive design for easy navigation while being accessible.
 - **Dark Mode Support**: Automatically adapts to system preferences
 
 ## 🚀 Getting Started
@@ -41,16 +42,21 @@ DisposableMail Finder is a secure web application that helps you verify whether 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Somorr/Disposable-Mail-Finder.git
-   cd Disposable-Mail-Finder
+   git clone https://github.com/yourusername/disposablemail-finder.git
+   cd disposablemail-finder
    ```
 2. install:
    ``` bash 
    npm run install
    npm run build
    ```
-3. Start the server:
+3. Start the server:```
    ```bash 
    npm run dev        # for development
    npm run start      # for production
    ```
+   
+4. Optional - if you want the server to check for new disposable domains using third-party API:
+
+Make sure to do `npm install` than `npm run build` and then `npm run dev` as asked in the previous steps. Once made a new file will be created in this following path `/data/verifymail_api.txt`. You can get a free API key from [VerifyMail](https://verifymail.io/) once account created and you activate your account go to [dashboard](https://verifymail.io/dashboard) and scroll to API Key section and copy and past the api key in `verifymail_api.txt`.
+Note that the file `verifymail_api.txt` can support multiple API keys, one per line.
