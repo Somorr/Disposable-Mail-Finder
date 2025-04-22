@@ -50,7 +50,7 @@ DisposableMail Finder is a secure web application that helps you verify whether 
    npm run install
    npm run build
    ```
-3. Start the server:```
+3. Start the server:
    ```bash 
    npm run dev        # for development
    npm run start      # for production
